@@ -317,7 +317,7 @@ class Driver:
             c_discount = eval(c_discount)
             w_tax = eval(w_tax)
         except Exception as e:
-            print("error", CUSTOMER, WAREHOUSE)
+            # print("error", CUSTOMER, WAREHOUSE)
             # exit(1)
             c_discount = 0
             w_tax = 0
@@ -366,7 +366,7 @@ class Driver:
                 i_price, i_name, i_data = res[0]
                 i_price = eval(i_price)
             except Exception as e:
-                print("error", ITEM)
+                # print("error", ITEM)
                 # exit(1)
                 i_price = 1
                 i_data = "null"
@@ -402,7 +402,7 @@ class Driver:
                 s_order_cnt = eval(s_order_cnt)
                 s_remote_cnt = eval(s_remote_cnt)
             except Exception as e:
-                print("error", STOCK)
+                # print("error", STOCK)
                 # exit(1)
                 s_quantity = 0
                 s_ytd = 0
@@ -466,7 +466,7 @@ class Driver:
                     return SQLState.ABORT
 
             except Exception as e:
-                print("error", ORDER_LINE)
+                # print("error", ORDER_LINE)
                 pass
 
             total_amount += ol_amount
