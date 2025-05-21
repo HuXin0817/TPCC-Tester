@@ -24,3 +24,4 @@ load ../../../src/test/performance_test/table_data/orders.csv into orders;
 load ../../../src/test/performance_test/table_data/order_line.csv into order_line;
 load ../../../src/test/performance_test/table_data/item.csv into item;
 load ../../../src/test/performance_test/table_data/stock.csv into stock;
+SET OUTPUT_FILE OFF;
